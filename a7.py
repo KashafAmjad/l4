@@ -1,11 +1,13 @@
-t1 =98
-t2 =94
-t3 =41
-t4 =95
-t5 =11
+lower=int(input("Enter a lower range:"))
+upper=int(input("Enter a upper range:"))
 
-sum=t1+t2+t3+t4+t5
-print("the sum of all the five tree is:",sum)
+print("prime number between",lower,"and",upper,"are:")
 
-average =sum/5
-print("the average of all the tree is:",average)
+for num in range(lower,upper+1):
+ if num > 1:
+  for i in range(2,num):
+   if (num % i)==0:
+          break
+  else:
+     print(num)
+  
