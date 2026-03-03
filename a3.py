@@ -1,10 +1,26 @@
-print("exam eligibility checker")
-med=input("any medical cause for absentees?(yes/no):")
-att=int(input("enter the attendance:"))
-if med=="yes":
- print("you are eligible for exam")
-else:
-   if att>=75:
-    print("you are eligible for exam")
-   else:
-     print("you are not eligible for exam")
+import turtle
+turtle.Screen().bgcolor("pink")
+turtle.Screen().setup(500,500)
+b=turtle.Turtle()
+b.forward(100)
+b.left(120)
+b.forward(100)
+b.left(120)
+b.forward(100)
+
+b.penup()
+b.right(150)
+b.forward(50)
+
+b.pendown()
+b.right(90)
+b.forward(100)
+b.right(120)
+b.forward(100)
+b.right(120)
+b.forward(100)
+
+
+
+
+turtle.done()

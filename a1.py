@@ -1,17 +1,14 @@
-n1=14
-n2=10
-n3=30
-if n1>n2 or n1>n3:
-    print("or operator")
-if n1>n2 and n1<n3:
-    print("and operator")
+import turtle
+turtle.Screen().bgcolor("pink")
+turtle.Screen().setup(600,600)
+poly=turtle.Turtle()
 
-    #not operator
-    t1="hello"
-    t2="hello"
-    if t1 != t2:
-        print("t1 and t2 are not equal")
-    else:
-        print("t1 and t2 are equal")
+side=8
+lenn=100
+angle=360.0 / side
 
+for i in range(side):
+    poly.forward(lenn)
+    poly.right(angle)
 
+turtle.done()

@@ -1,12 +1,12 @@
-h=float(input("Enter hight in meters:"))
-w=int(input("Enter weight in kg:"))
-bmi=w/(h*h)
-print("BMI is:",bmi)
-if bmi<18.5:
-    print("person in underweight") 
-elif bmi>=18 and bmi<25:
-     print("person have normal weight")    
-elif bmi>=25 and bmi<30:  
-     print("person is overweight")
-else:
-     print("person is obese")
+import turtle
+wind=turtle.Screen()
+wind.bgcolor("pink")
+p=turtle.Turtle()
+s=0
+
+while True:
+  for i in range(5):
+        p.fd(s+1)
+        p.left(75)
+        s=s-5
+  s=s+1
