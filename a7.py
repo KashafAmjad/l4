@@ -1,13 +1,23 @@
-lower=int(input("Enter a lower range:"))
-upper=int(input("Enter a upper range:"))
+def add(P, Q):
+    return P+Q
+def substract (P,Q):
+    return P-Q
 
-print("prime number between",lower,"and",upper,"are:")
+print("Please select the operation.")
+print("a. Add")
+print("b. Substract")
 
-for num in range(lower,upper+1):
- if num > 1:
-  for i in range(2,num):
-   if (num % i)==0:
-          break
-  else:
-     print(num)
-  
+choice=input("Please enter your choice(a/b):")
+num_1= int(input("Please enter the first number:"))
+num_2= int(input("Please enter the second number:"))
+if choice=='a':
+ print (num_1, " + ", num_2, " = ", add(num_1, num_2))
+elif choice=='b':
+    print (num_1, " - ", num_2, " = ", substract(num_1, num_2))
+else:
+          print ("invalid input")
+
+
+
+
+    

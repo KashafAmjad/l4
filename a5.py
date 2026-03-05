@@ -1,9 +1,6 @@
-#cheak age
-age=int(input("Enter your age:"))
-if age>10: 
-      if age>10 and age<=30:
-        print("you are allowed in sportsclub")
-      else:
-          print("you are not allowed")
-else:
-    print("you are too young")
+def wishes(name):
+    print("hello",name)
+    print("welcome to class \n")
+wishes("kashaf")
+wishes("aimal")
+wishes("sara")

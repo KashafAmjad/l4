@@ -1,10 +1,7 @@
-word=input("Enter any string:")
-char=input("Enter any character")
-i=0
-count=0
-while(i < len(word)):
-     if(word[i]==char):
-          count = count + 1
-     i=i+1
+def weather_condition(w,c):
+  print('The weather is plesent in',w)
+  print('The climate is very',c)
+w=input("Enter wether condition:rainy/sunny/cloudy:")
+c=input("Enter climate:humid/hot/cold:")
 
-print("above character has occured: ",count,"times")
+weather_condition(w,c)
