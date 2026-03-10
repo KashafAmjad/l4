@@ -1,12 +1,5 @@
-import turtle
-wind=turtle.Screen()
-wind.bgcolor("pink")
-p=turtle.Turtle()
-s=0
+def totalBill(bill,tip):
+    total=bill +tip*0.2
+    return total
 
-while True:
-  for i in range(5):
-        p.fd(s+1)
-        p.left(75)
-        s=s-5
-  s=s+1
+print ("TotalBill is",totalBill(500,10))
