@@ -1,6 +1,10 @@
-def wishes(name):
-    print("hello",name)
-    print("welcome to class \n")
-wishes("kashaf")
-wishes("aimal")
-wishes("sara")
+word=input("Enter any word:")
+
+for i in word:
+    if i=="a":
+
+     print ("letter a is found")
+     
+     break
+    else:
+       print (i)

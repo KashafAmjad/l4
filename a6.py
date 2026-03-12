@@ -1,7 +1,9 @@
-def weather_condition(w,c):
-  print('The weather is plesent in',w)
-  print('The climate is very',c)
-w=input("Enter wether condition:rainy/sunny/cloudy:")
-c=input("Enter climate:humid/hot/cold:")
-
-weather_condition(w,c)
+for x in range (21):
+    if x %10==0:
+      print("divided by 10")
+    elif x %5==0:
+       print("divided by 5")
+    elif x %3==0:
+     pass
+    else:
+      print(x)
