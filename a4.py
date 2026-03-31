@@ -1,10 +1,6 @@
-import turtle
-turtle.Screen().bgcolor("pink")
-turtle.Screen().setup(600,600)
-turt=turtle.Turtle()
-
-for i in range(4):
- turt.forward(150)
- turt.left(90)
-
-turtle.done()
+from datetime import date , time , datetime
+today=date.today()
+print("today's date-",today)
+print("date components are",today.year,today.month,today.day)
+now=datetime.now()
+print("current date and time-",now)
